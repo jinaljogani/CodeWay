@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logosb.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just coffee <br>It's<span>Starbucks</span></h2>
+                <p> youre sipping a latte, enjoying a Frappuccino, or indulging in a pastry, Starbucks offers a diverse range of coffee experiences. From the iconic Pike Place Market location to the cozy corners of cafes worldwide, Starbucks continues to be a beloved destination for coffee enthusiasts. 🌟☕</p>
+                <a href="#">Learn More.?</a>
+            </div>
+        
+            <div class="imgBox">
+                <img src="yg.png" alt="" class="starbucks" height="260px" width="170px">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="yg.png" onclick="imgSlider('yg.png');changeCircleColor('#017143')" alt=""></li>
+            <li><img src="anip.png" onclick="imgSlider('anip.png'); changeCircleColor('#0000FF')" alt=""></li>
+            <li><img src="brc.png" onclick="imgSlider('brc.png'); changeCircleColor('#d752b1')" alt=""></li>
+
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            var circle = document.getElementById('circle');
+            circle.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
